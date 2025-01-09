@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>طيور الظلام</title>
+    <link rel="icon" type="image/png" href="https://i.imgur.com/llQikdz.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #1e1e2f;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .top-bar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #FFD700;
+            color: black;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .top-bar a {
+            text-decoration: none;
+            color: black;
+            font-size: 1.2em;
+            margin: 0 10px;
+            display: flex;
+            align-items: center;
+        }
+        .top-bar .youtube-icon {
+            width: 35px;
+            height: 35px;
+            background-color: #FF0000;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .top-bar .youtube-icon img {
+            width: 20px;
+            height: auto;
+        }
+        .logo-section {
+            margin: 80px 0 50px 0;
+        }
+        .logo-section img {
+            width: 150px;
+            height: auto;
+        }
+        .logo-section h1 {
+            margin: 10px 0;
+            font-size: 2.5em;
+            color: #FFD700;
+        }
+        .section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #2a2a40;
+            border-radius: 10px;
+        }
+        .section h2 {
+            color: #FFD700;
+            margin-bottom: 20px;
+        }
+        .section a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px auto;
+            padding: 10px 20px;
+            text-decoration: none;
+            background-color: #FFD700;
+            color: black;
+            font-weight: bold;
+            border: 2px solid #333;
+            border-radius: 5px;
+            width: 60%;
+            max-width: 300px;
+            text-align: center;
+            text-shadow: 1px 1px 2px white;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+        .section a:hover {
+            background-color: #FFC107;
+            transform: scale(1.05);
+        }
+        .section a img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+        #back-to-top {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #FFD700;
+            color: black;
+            border: none;
+            border-radius: 50%;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.2s, transform 0.2s;
+        }
+        #back-to-top:hover {
+            background-color: #FFC107;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <a href="https://www.google.com/" target="_blank">🔍 بحث Google</a>
+        <a href="https://www.youtube.com/" target="_blank" class="youtube-icon">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png" alt="YouTube Icon">
+        </a>
+    </div>
+
+    <div class="logo-section">
+        <img src="https://i.imgur.com/llQikdz.png" alt="طيور الظلام Logo">
+        <h1>طيور الظلام</h1>
+    </div>
+
+    <div class="section">
+        <h2>يدعم البحث العكسي</h2>
+        <a href="https://images.google.com/" target="_blank">
+            <img src="https://img.icons8.com/color/48/google-logo.png" alt="Google Images Icon">Google Images
+        </a>
+        <a href="https://yandex.com/images/" target="_blank">
+            <img src="https://img.icons8.com/ios-filled/50/000000/search.png" alt="Yandex Images Icon">Yandex Images
+        </a>
+        <a href="https://www.tineye.com" target="_blank">
+            <img src="https://logonoid.com/images/tineye-logo.png" alt="TinEye Icon">TinEye
+        </a>
+        <a href="https://www.bing.com/visualsearch" target="_blank">
+            <img src="https://img.icons8.com/color/48/bing.png" alt="Bing Visual Search Icon">Bing Visual Search
+        </a>
+        <a href="https://saucenao.com" target="_blank">
+            <img src="https://i.imgur.com/06er8Kn.png" alt="SauceNAO Icon">SauceNAO
+        </a>
+        <a href="https://iqdb.org" target="_blank">
+            <img src="https://img.icons8.com/external-flat-juicy-fish/60/external-drawing-art-and-design-flat-flat-juicy-fish.png" alt="IQDB Icon">IQDB
+        </a>
+    </div>
+
+    <div class="section">
+        <h2>لا يدعم البحث العكسي</h2>
+        <a href="https://www.pinterest.com/" target="_blank">
+            <img src="https://img.icons8.com/color/48/pinterest--v1.png" alt="Pinterest Lens Icon">Pinterest Lens
+        </a>
+        <a href="https://www.gettyimages.nl/" target="_blank">
+            <img src="https://img.icons8.com/ios-filled/50/000000/image.png" alt="Getty Images Icon">Getty Images
+        </a>
+        <a href="https://www.shutterstock.com/" target="_blank">
+            <img src="https://img.icons8.com/color/48/camera.png" alt="Shutterstock Icon">Shutterstock
+        </a>
+        <a href="https://socialcatfish.com" target="_blank">
+            <img src="https://img.icons8.com/ios-filled/50/000000/user.png" alt="Social Catfish Icon">Social Catfish
+        </a>
+        <a href="https://image.baidu.com/" target="_blank">
+            <img src="https://img.icons8.com/color/48/baidu.png" alt="Baidu Icon">Baidu Image Search
+        </a>
+    </div>
+
+    <div class="section">
+        <h2>تحميل الوسائط</h2>
+        <a href="https://extract.pics/" target="_blank">
+            <img src="https://img.icons8.com/ios-filled/50/000000/image.png" alt="Image Extractor Icon">مستخرج الصور
+        </a>
+        <a href="https://9xbuddy.online/ar" target="_blank">
+            <img src="https://img.icons8.com/ios-filled/50/000000/video.png" alt="Video Extractor Icon">مستخرج الفيديو
+        </a>
+    </div>
+
+    <button id="back-to-top" onclick="scrollToTop()">↑</button>
+
+    <script>
+        // Show/hide back-to-top button
+        window.onscroll = function() {
+            const backToTopButton = document.getElementById('back-to-top');
+            if (document.documentElement.scrollTop > 100) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        };
+
+        // Scroll to top function
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
